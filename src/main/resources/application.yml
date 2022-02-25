@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    properties:
+      schema.registry.url: ${SCHEMA_REGISTRY_URL}
+      specific:
+        avro:
+          reader: true
+    bootstrap-servers: ${BROKERS_IP}
+    consumer:
+      group-id: account_consumer
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      enable:
+        auto:
+          commit: false
