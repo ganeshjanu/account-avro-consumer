@@ -1,6 +1,5 @@
-package com.friends.accountserviceconsumer.listener;
+package com.friends.accountavroconsumer.listener;
 
-import com.friends.accountservice.Account;
 import com.friends.accountservice.AccountTransaction;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

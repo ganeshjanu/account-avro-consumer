@@ -53,15 +53,15 @@ HTTP POST = /accountTransaction
 
   2. Build an image
   
-      _docker build -t <docker_username>/account-avro-producer:0.1 ._
+      _docker build -t <docker_username>/account-avro-consumer:0.1 ._
   
   3. Run a container
   
-      _docker run -p 9010:8080 <docker_username>/account-avro-producer-0.1_
+      _docker run -p 9010:8080 <docker_username>/account-avro-consumer-0.1_
   
   4. Push an image
   
-      _docker push <docker_username>/account-avro-producer:0.1_
+      _docker push <docker_username>/account-avro-consumer:0.1_
 
 ## Account & Account template files
 
